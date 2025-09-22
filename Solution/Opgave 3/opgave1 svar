@@ -1,0 +1,15 @@
+Hvordan er HTTP metoden specificeret_
+
+Det sker gennem get post put delete eksemplevis i routes.
+
+2. Hvordan håndteres request og repoonse.
+Det sker gennnem clienten ligger en request eksemplevis her på siden hvor det så 
+ramemr et endpoint, og vi så har sender et svar tilbage gennem routes tilbage til clienenten
+
+3.
+
+
+ Hvordan er HTTP metoden specificeret?
+§ Hvordan håndteres Request og Response?
+§ Hvad kan du se i console.log() for headers og body
+§ Hvad med fejlhåndtering og svar tilbage til klient

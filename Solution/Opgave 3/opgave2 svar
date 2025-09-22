@@ -1,0 +1,24 @@
+
+1. Hvordan håndteres Cookies i Request og Response?
+
+Den bliver sendt i response, eksemplevis som det ses her 
+router.get('/set', async (req, res) => {
+    res.cookie('myCookie', 'cookieValue');
+    res.json({ message: 'Cookie set!' });
+});
+alt sker på serviersiden, og klienten (browseren) modtager den og gemmer den.
+
+2.
+Hvad kan du se i console.log() for headers og body på klient og server?
+I serverens console.log() kan du se headers som indeholder information om requesten, såsom 'host', 'user-agent', 'accept', 'cookie' osv. Body vil typisk være tom for
+
+3. Hvad er forskellen på cookie mellem cookies og express-session?
+Cookies er små datafiler, der gemmes på klientens browser og sendes med hver HTTP-anmodning til serveren. 
+De bruges ofte til at gemme brugerpræferencer, sessionsdata eller andre oplysninger, der skal bevares mellem anmodninger.
+
+
+4.  Hvad gør middleware i cookie-app/routes/middleware.js?
+Middleware i cookie-app/routes/middleware.js fungerer som en mellemstation, der kan behandle anmodninger, før de når den endelige rutehåndtering. 
+Det kan bruges til at logge oplysninger, autentificere brugere, validere data eller udføre andre opgaver, der skal ske for hver anmodning til de ruter, der bruger dette middleware. 
+I dette tilfælde logger middleware oplysninger om hver HTTP-anmodning,
+ såsom metode, URL, headers, IP-adresse og body.
